@@ -2,7 +2,7 @@ use clap::Parser;
 use colored::Colorize;
 use sha256::try_digest;
 
-/// Search for a pattern in a file and display the lines that contain it.
+/// Compare a given file and sha256sum
 #[derive(Parser)]
 struct Cli {
     /// The path to the file to read
